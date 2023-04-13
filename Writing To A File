@@ -1,0 +1,9 @@
+import requests
+
+
+url = "copy an paste url from a site you"
+
+response = requests.get(url)
+
+with open("Create a name for file.txt", "w") as f:
+    f.write(response.text)
