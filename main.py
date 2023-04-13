@@ -1,9 +1,9 @@
 import requests
 
 
-url = "http://norvig.com/ngrams/sowpods.txt"
+url = "Enter the url of the website you would like to get content from"
 
 response = requests.get(url)
 
-with open("HangMan Words.txt", "w") as f:
+with open("name of file that you want the content to be written in.txt", "w") as f:
     f.write(response.text)
